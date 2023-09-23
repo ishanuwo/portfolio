@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color:aliceblue;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+.topnav {
+  overflow: hidden;
+  background-color: #21295C;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #9EB3C2;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #065A82;
+  color: white;
+}
+
+
+.hero-image {
+  background-color: #99a0ca;
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.hero-text button {
+  border: solid px black;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-color: #fff;
+  text-align: center;
+  cursor: pointer;
+}
+
+.hero-text button:hover {
+  background-color: #555;
+  color: white;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #3d446a;
+  color: white;
+}
+
+.container {
+  padding: 16px 16px;
+  background-color: white;
+}
+
+.container::after, .row::after {
+  background-color: #3d446a;
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: rgb(143, 143, 143);
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.work-section{
+  padding: 50px;
+  text-align: center;
+  background-color: #99a0ca;
+  color: black;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+
+
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #21295C;
+   color: white;
+   text-align: center;
+}
+
+.form{
+  padding-bottom: 100px;
+}
+
+</style>
+</head>
+<body>
+
+<div class="topnav">
+  <a class="active" href="#Home">Home</a>
+  <a href="#about">About</a>
+  <a href="#work">Work Experience</a>
+  <a href="#contact">Contact</a>
+</div>
+
+<div class="hero-image" id ='Home'>
+  <div class="hero-text">
+    <h1 style="font-size:50px">I am Ishan Jain</h1>
+    <p>And I'm a SWE Student</p>
+    <button>Download my resume</button>
+  </div>
+</div>
+
+<div class="about-section" id = "about">
+  <h1>About me</h1>
+  <p>I'm thrilled to welcome you to my portfolio website. I'm a passionate and curious second-year Software Engineering student at Western University. As an aspiring software engineer, I am on a captivating journey to explore the boundless realms of technology and innovation. From an early age, I've been captivated by the artistry of coding and the limitless possibilities it offers to shape the world around us. My journey into the world of software engineering began with a fascination for problem-solving and a love for turning abstract concepts into tangible solutions. Guided by this fascination, I embarked on my academic journey at Western University, where l've been immersing myself in the world of algorithms, data structures, and software design principles.</p>
+</div>
+<div class="work-section" id = "work">
+<h1 style="text-align:center">Work Experience</h1>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <div class="container">
+        <h2>Full Stack Dev</h2>
+        <p class="title">Epic Routes</p>
+        <p>Designed websites using HTML, CSS, JS and React.js</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <div class="container">
+        <h2>Backend Developer</h2>
+        <p class="title">Google</p>
+        <p>Managed backend server development</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <div class="container">
+        <h2>Web Designer</h2>
+        <p class="title">Western University</p>
+        <p>Designed websites</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="container2" id = "contact">
+  <div style="text-align:center">
+    <h2>Contact Me</h2>
+    <p>Leave me a message:</p>
+  </div>
+    <div class="column">
+    </div>
+    <div class="column">
+      <form class="form" >
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+          <option value="usa">Others</option>
+        </select>
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+</div>
+
+<div class="footer">
+  <p>Ishan's Portfolio</p>
+</div>
+<div style="padding-left:16px">
+</div>
+
+</body>
+</html>
