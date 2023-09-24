@@ -70,7 +70,7 @@ body, html {
 }
 
 .hero-text button:hover {
-  background-color: #555;
+  background-color: rgba(108, 75, 217);;
   color: white;
 }
 
