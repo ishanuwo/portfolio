@@ -37,8 +37,6 @@ body, html {
 
 
 .hero-image {
-  background-color: #99a0ca;
-  background-image: url("space.jpeg");
   height: 50%;
   background-position: center;
   background-repeat: no-repeat;
